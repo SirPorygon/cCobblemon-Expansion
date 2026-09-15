@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "cobblemonexpansion",
+	"version": "${version}",
+	"name": "Cobblemon Expansion",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Sir Porygon!"
+	],
+	"contact": {
+		"homepage": "https://sirporygon.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/cobblemonexpansion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sirporygon.cobblemonexpansion.CobblemonExpansion"
+		],
+		"fabric-datagen": [
+			"net.sirporygon.cobblemonexpansion.CobblemonExpansionDataGenerator"
+		],
+		"client": [
+			"net.sirporygon.cobblemonexpansion.CobblemonExpansionClient"
+		]
+	},
+	"mixins": [
+		"cobblemonexpansion.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
